@@ -36,7 +36,7 @@ header{
                             border-bottom: 0px solid white;
                         }
                         &:hover{
-                            background-color:#C42D40;
+                            background-color: $rouge;
                             color: white;
                         }
                         a{
@@ -65,7 +65,7 @@ header{
             margin-top: 50px;
             span{
                 &:first-of-type{
-                    color: #C42D40;
+                    color: $rouge;
                 }
                 &:last-of-type{
                     font-size: 30px;

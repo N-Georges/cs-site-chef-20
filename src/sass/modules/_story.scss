@@ -1,0 +1,92 @@
+section{
+    .story{
+        position: relative;
+        margin: 10%;
+        h3{
+            font-family: courgette;
+            span{
+                color: $rouge;
+                font-size: 40px;
+            }
+        }
+        p{
+            padding: 20px 20%;
+            }
+        .img1{
+            position: absolute;
+            top: 0;
+            }
+        .img2{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+.contain{
+    position: relative;
+    margin: 10%;
+    .row{
+        .col-12{
+            text-align: center;
+            font-family: courgette;
+            span{
+                color: $rouge;
+            }
+        }
+    }
+    .row{
+        .col-2{
+            text-align: center;            
+            div{ 
+                border-bottom: 1px solid lightgray;
+                border-right: 1px solid lightgray;
+                &:hover{
+                    border-right: 5px solid $rouge;
+                    i{
+                        color: $rouge;
+                    }
+                }
+                font-family: courgette;
+                i{
+                    font-size: 50px;
+                    padding-top: 10px;
+                }
+                
+                p{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .img3{
+        position: absolute;
+        right: 0px;
+    }
+    .col-md-5{
+        margin-bottom: 20px;
+        .brd{
+            border-bottom: 1px solid lightgray ;
+        }
+        .menuImg{
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+        }
+        .content{
+            margin-left: 10px;
+            h6{
+                margin: 0;
+            }
+        
+        }
+        .price{
+            color: $rouge;
+            margin: 18px 25px;
+            font-weight: bold;
+            span{
+
+            }
+        }
+    }
+}

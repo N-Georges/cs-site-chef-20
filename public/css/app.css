@@ -117,6 +117,88 @@ header .cta {
   bottom: 100px;
 }
 
+section .story {
+  position: relative;
+  margin: 10%;
+}
+section .story h3, section .story .h3 {
+  font-family: courgette;
+}
+section .story h3 span, section .story .h3 span {
+  color: #C42D40;
+  font-size: 40px;
+}
+section .story p {
+  padding: 20px 20%;
+}
+section .story .img1 {
+  position: absolute;
+  top: 0;
+}
+section .story .img2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.contain {
+  position: relative;
+  margin: 10%;
+}
+.contain .row .col-12 {
+  text-align: center;
+  font-family: courgette;
+}
+.contain .row .col-12 span {
+  color: #C42D40;
+}
+.contain .row .col-2 {
+  text-align: center;
+}
+.contain .row .col-2 div {
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  font-family: courgette;
+}
+.contain .row .col-2 div:hover {
+  border-right: 5px solid #C42D40;
+}
+.contain .row .col-2 div:hover i {
+  color: #C42D40;
+}
+.contain .row .col-2 div i {
+  font-size: 50px;
+  padding-top: 10px;
+}
+.contain .row .col-2 div p {
+  font-size: 25px;
+}
+.contain .img3 {
+  position: absolute;
+  right: 0px;
+}
+.contain .col-md-5 {
+  margin-bottom: 20px;
+}
+.contain .col-md-5 .brd {
+  border-bottom: 1px solid lightgray;
+}
+.contain .col-md-5 .menuImg {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.contain .col-md-5 .content {
+  margin-left: 10px;
+}
+.contain .col-md-5 .content h6, .contain .col-md-5 .content .h6 {
+  margin: 0;
+}
+.contain .col-md-5 .price {
+  color: #C42D40;
+  margin: 18px 25px;
+  font-weight: bold;
+}
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
