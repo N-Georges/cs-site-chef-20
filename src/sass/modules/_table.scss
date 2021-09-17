@@ -1,10 +1,10 @@
 .table1{
-    margin: 5%;
+    margin: 5% 10%;
     border: 1px solid lightgray;
     bottom: 10px;
+    background-color: white;
     
     .content{
-        // border: 1px solid blue;
         position: relative;
         .imgRGrey{
             position: absolute;
@@ -15,6 +15,15 @@
             position: absolute;
             top: 0;
         }
+        .imgBRGrey{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .imgBLGrey{
+            position: absolute;
+            bottom: 0;
+        }
         .title{
             font-family: courgette;
             span{
@@ -23,18 +32,27 @@
             }
         }
         .tableForm{
-            // border: 1px solid red;
             background-image: url(../img/book_table_bg.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom;
-            padding: 60px 10%;
+            padding: 7% 5%;
             border-radius: 20px;
             margin: 20%;
             margin-top: 50px;
+            margin-bottom: 50px;
             .callUs{
-                
+                color: lightgray;
+                span{
+                    font-weight: bold;
+                    font-size: 20px;
+                }
             }
+            .btn{
+                border-radius: 20px;
+                margin-top: 50px;
+            }
+
             .row{
                 form{
                     div{
@@ -53,6 +71,42 @@
                     }
                    
                 }
+            }
+        }
+        .cloche{
+            height: 3px;
+            padding-bottom: 100px;
+        }
+        .blog{
+            margin-bottom: 100px;
+            .cardBlog{
+                position: relative;
+                .imgBlog{
+                    border: 5px solid $gris;
+                border-radius: 20px;
+                width: 400px;
+                }
+                .social{
+                    position: absolute;
+                    bottom: 120px;
+                    left: 80px;
+                    margin: 0;
+                    width: 350px;
+                    color: #cdcdcd; 
+                    background-color: $rouge;
+                    border-radius: 10px;
+                    height: 50px;
+                    span{
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+                .textContent{
+                    margin: 25px 30px;
+                }
+            }
+            .btn{
+                border-radius: 20px;
             }
         }
     }

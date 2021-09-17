@@ -60,12 +60,8 @@
             <button type="button" class="btn btn-light px-4 py-2">PURCHASE THEME</button>
             <button type="button" class="btn btn-danger px-4 py-2">LEARN MORE</button>
         </div>
-        <div class="indicator">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-        </div>
     </header>
+<main>
     <!-- section story -->
     <section>
         <!-- <img class="img3" src="./public/img/bottom_decoration_img.png" alt=""> -->
@@ -78,6 +74,7 @@
             <img class="img1" src="./public/img/box-left-top.png" alt="">
             <img class="img2" src="./public/img/box-right-top.png" alt="">
         </div>
+        <!-- section menu list -->
         <div class="contain">
             <div class="row">
                 <div class="col-12 pb-5">
@@ -242,16 +239,16 @@
             </div>
             <div class="row text-center">
                 <div class="col-3"><img src="./public/img/chef1.png" alt="photo de chef cuisto">
-                    <p>ayhaan</p>
+                    <p>Ayhaan</p>
                 </div>
                 <div class="col-3"><img src="./public/img/chef2.png" alt="photo de chef cuisto">
-                    <p>philippe</p>
+                    <p>Philippe</p>
                 </div>
                 <div class="col-3"><img src="./public/img/chef3.png" alt="photo de chef cuisto">
                     <p>Heredia</p>
                 </div>
                 <div class="col-3"><img src="./public/img/chef4.png" alt="photo de chef cuisto">
-                    <p>jonathan</p>
+                    <p>Jonathan</p>
                 </div>
             </div>
         </div>
@@ -262,57 +259,117 @@
             <h2 class="title text-center pt-5"><span>Book</span> Your Table</h2>
             <img class="imgLGrey" src="./public/img/box-left-top-grey.png" alt="">
             <img class="imgRGrey" src="./public/img/box-right-top-grey.png" alt="">
-            
             <div class="tableForm">
                 <div class="row text-white text-center callUs">
-                    <div class="col-12 pb-3"><p>For any query please call us at +91-1234567890</p></div>
+                    <div class="col-12 pb-3">
+                        <p>For any query please call us at <span>+91-1234567890</span></p>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
-                    <form action="">
-                        <div>
-                            <input type="text" placeholder="Enter Full Name">
-                            <input type="text" placeholder="Phone Number">
-                            <input type="text" placeholder="Date">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Occasion</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                        <form action="">
+                            <div>
+                                <input type="text" placeholder="Enter Full Name">
+                                <input type="number" placeholder="Phone Number">
+                                <input type="text" placeholder="Date">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Occasion</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <form action="">
+                            <div>
+                                <input type="text" placeholder="Enter Id">
+                                <select class="form-select">
+                                    <option selected>No Of Person</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2-5</option>
+                                    <option value="3">5+</option>
+                                </select>
+                                <input type="number" placeholder="Time">
+                                <select class="form-select">
+                                    <option selected>cuisine</option>
+                                    <option value="1">Breakfast</option>
+                                    <option value="2">Lunch</option>
+                                    <option value="3">Snack</option>
+                                    <option value="3">Dinner</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-danger p-2">BOOK NOW</button>
                         </div>
-                    </form>
-                </div>
-                <div class="col-6">
-                    <form action="">
-                        <div>
-                            <input type="text" placeholder="Enter Id">
-                            <select class="form-select">
-                                <option selected>No Of Person</option>
-                                <option value="1">1</option>
-                                <option value="2">2-5</option>
-                                <option value="3">5+</option>
-                            </select>
-                            <input type="text" placeholder="Time">
-                            <select class="form-select">
-                                <option selected>cuisine</option>
-                                <option value="1">Breakfast</option>
-                                <option value="2">Lunch</option>
-                                <option value="3">Snack</option>
-                                <option value="3">Dinner</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
+                    </div>
                 </div>
             </div>
             <img class="imgBLGrey" src="./public/img/box-bottom-left-grey.png" alt="">
             <img class="imgBRGrey" src="./public/img/box-bottom_right-grey.png" alt="">
+            <!-- partie your blog -->
+            <div class="row p-5">
+                <div class="col-12 text-center title">
+                    <h2 class="pb-0 mb-0"><span>OUR</span> Blog</h2>
+                </div>
+                <div class="text-center cloche"><img src="./public/img/decoration_line.png" alt=""></div>
+                <div class="row d-flex justify-content-center blog">
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="cardBlog">
+                            <div class="ps-5"><img class="imgBlog" src="./public/img/blog_img1.jpg" alt="">
+                                <div class="social  d-flex justify-content-center align-items-center pt-3 text-center">
+                                    <p ><span>12</span> April 2017<span>/ 20</span> Comment<span>/ 35</span> Likes</p>
+                                </div>
+                                <div class="textContent">
+                                    <h3>Lorem ipsum</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="cardBlog">
+                            <div class="ps-5"><img class="imgBlog" src="./public/img/blog_img2.jpg" alt="">
+                                <div class="social  d-flex justify-content-center align-items-center pt-3 text-center">
+                                    <p ><span>12</span> April 2017<span>/ 20</span> Comment<span>/ 35</span> Likes</p>
+                                </div>
+                                <div class="textContent">
+                                    <h3>Lorem ipsum</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-danger px-4">KNOW MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <section class="client">
+        <div class="row">
+            <div class="col-6">
+                <div>
+                    <img src="./public/img/testimonial1.jpg" alt="">
+                </div>
+                <div>
+                    <h4>Lorem Ipsum</h4>
+                    <p>Manager</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veritatis harum laboriosam officiis dolorem tempore odit reiciendis rerum incidunt voluptates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>    
     <!-- scipts bootstrap et popper -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
 </body>
-
 </html>

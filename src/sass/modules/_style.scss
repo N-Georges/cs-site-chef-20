@@ -1,9 +1,12 @@
 @import "./header";
 @import "./story";
-@import "./menuList";
 @import "./chef";
 @import "./table";
-@import "./blog";
 @import "./client";
 @import "./contact";
 @import "./footer";
+
+
+main{
+    background-image: url(../img/main_bg.jpg);
+}

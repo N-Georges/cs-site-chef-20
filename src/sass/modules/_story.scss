@@ -1,7 +1,12 @@
 section{
-    .story{
+    &:first-of-type{
+        background-color: white;
         position: relative;
-        margin: 10%;
+        margin: 5% 10%;  
+    }
+    
+    .story{
+        
         h3{
             font-family: courgette;
             span{
@@ -25,7 +30,7 @@ section{
 }
 .contain{
     position: relative;
-    margin: 10%;
+    // margin: 10%;
     .row{
         .col-12{
             text-align: center;
@@ -71,6 +76,7 @@ section{
         .menuImg{
             height: 75px;
             width: 75px;
+            border: 5px solid $gris;
             border-radius: 50%;
         }
         .content{

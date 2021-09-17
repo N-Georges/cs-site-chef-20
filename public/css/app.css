@@ -10,7 +10,7 @@ header {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 header .navbar {
   margin-left: 250px;
@@ -117,9 +117,10 @@ header .cta {
   bottom: 100px;
 }
 
-section .story {
+section:first-of-type {
+  background-color: white;
   position: relative;
-  margin: 10%;
+  margin: 5% 10%;
 }
 section .story h3, section .story .h3 {
   font-family: courgette;
@@ -143,7 +144,6 @@ section .story .img2 {
 
 .contain {
   position: relative;
-  margin: 10%;
 }
 .contain .row .col-12 {
   text-align: center;
@@ -186,6 +186,7 @@ section .story .img2 {
 .contain .col-md-5 .menuImg {
   height: 75px;
   width: 75px;
+  border: 5px solid lightgray;
   border-radius: 50%;
 }
 .contain .col-md-5 .content {
@@ -221,9 +222,10 @@ section .story .img2 {
 }
 
 .table1 {
-  margin: 5%;
+  margin: 5% 10%;
   border: 1px solid lightgray;
   bottom: 10px;
+  background-color: white;
 }
 .table1 .content {
   position: relative;
@@ -237,6 +239,15 @@ section .story .img2 {
   position: absolute;
   top: 0;
 }
+.table1 .content .imgBRGrey {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.table1 .content .imgBLGrey {
+  position: absolute;
+  bottom: 0;
+}
 .table1 .content .title {
   font-family: courgette;
 }
@@ -249,9 +260,21 @@ section .story .img2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding: 60px 10%;
+  padding: 7% 5%;
   border-radius: 20px;
   margin: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.table1 .content .tableForm .callUs {
+  color: lightgray;
+}
+.table1 .content .tableForm .callUs span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.table1 .content .tableForm .btn {
+  border-radius: 20px;
   margin-top: 50px;
 }
 .table1 .content .tableForm .row form div input, .table1 .content .tableForm .row form div select {
@@ -265,6 +288,46 @@ section .story .img2 {
 }
 .table1 .content .tableForm .row form div input::placeholder, .table1 .content .tableForm .row form div select::placeholder {
   color: black;
+}
+.table1 .content .cloche {
+  height: 3px;
+  padding-bottom: 100px;
+}
+.table1 .content .blog {
+  margin-bottom: 100px;
+}
+.table1 .content .blog .cardBlog {
+  position: relative;
+}
+.table1 .content .blog .cardBlog .imgBlog {
+  border: 5px solid lightgray;
+  border-radius: 20px;
+  width: 400px;
+}
+.table1 .content .blog .cardBlog .social {
+  position: absolute;
+  bottom: 120px;
+  left: 80px;
+  margin: 0;
+  width: 350px;
+  color: #cdcdcd;
+  background-color: #C42D40;
+  border-radius: 10px;
+  height: 50px;
+}
+.table1 .content .blog .cardBlog .social span {
+  color: white;
+  font-size: 20px;
+}
+.table1 .content .blog .cardBlog .textContent {
+  margin: 25px 30px;
+}
+.table1 .content .blog .btn {
+  border-radius: 20px;
+}
+
+main {
+  background-image: url(../img/main_bg.jpg);
 }
 
 /*!
