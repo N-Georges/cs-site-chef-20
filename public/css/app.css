@@ -211,6 +211,7 @@ section .story .img2 {
 }
 .chef .container .row .title span {
   color: #C42D40;
+  font-size: 40px;
 }
 .chef .container .row div img {
   height: 300px;
@@ -324,6 +325,51 @@ section .story .img2 {
 }
 .table1 .content .blog .btn {
   border-radius: 20px;
+}
+
+.client {
+  background-image: url(../img/testimonials_background.jpg);
+  background-position: center;
+  background-size: 10000px;
+}
+.client .title {
+  font-family: courgette;
+  color: white;
+  margin-top: 50px;
+}
+.client .title span {
+  color: #C42D40;
+  font-size: 40px;
+}
+.client .cardClient {
+  padding: 50px 10%;
+}
+.client .cardClient .client1 img, .client .cardClient .client2 img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid lightgray;
+}
+.client .cardClient .client2 {
+  order: 1;
+}
+.client .cardClient .content, .client .cardClient .content2 {
+  padding: 10px 5px;
+  margin-left: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.client .cardClient .content h4, .client .cardClient .content .h4, .client .cardClient .content2 h4, .client .cardClient .content2 .h4 {
+  margin: 0;
+}
+.client .cardClient .content p, .client .cardClient .content2 p {
+  margin: 0;
+}
+.client .cardClient .content p:first-of-type, .client .cardClient .content2 p:first-of-type {
+  color: #C42D40;
+}
+.client .cardClient .content2 {
+  margin-right: 20px;
 }
 
 main {

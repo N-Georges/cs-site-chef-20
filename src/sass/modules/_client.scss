@@ -1,0 +1,50 @@
+.client{
+    background-image: url(../img/testimonials_background.jpg);
+    background-position: center;
+    background-size: 10000px;    
+    .title{
+        font-family: courgette;
+        color: white;
+        margin-top: 50px;
+        span{
+            color: $rouge;
+            font-size: 40px;
+        }
+    }
+    .cardClient{
+        padding: 50px 10%;
+         .client1, .client2{
+        img{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border: 5px solid $gris;
+        }
+        
+    }
+    .client2{
+        order: 1;
+    }
+    .content, .content2{
+        padding: 10px 5px;
+        margin-left: 20px;
+        border: 1px solid $gris;
+        border-radius: 10px;
+        h4{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            &:first-of-type{
+               color: $rouge; 
+            }
+            
+        }
+    }
+    .content2{
+        margin-right: 20px;
+    }
+    }
+    
+   
+}
