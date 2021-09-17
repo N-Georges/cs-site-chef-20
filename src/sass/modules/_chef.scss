@@ -1,0 +1,29 @@
+.chef{
+    background-color: black;
+    padding: 5%;
+    .container{
+        .row{
+            .title{
+                font-family: courgette;
+                margin-bottom: 50px;
+                color: white;
+                span{
+                    color: $rouge;
+                }
+            }
+        }
+        .row{
+            div{
+                img{
+                    height: 300px;
+                    width: 200px;
+                    border-bottom: 1px solid grey;
+                    
+                }
+                p{
+                    color: white;
+                }
+            }
+        }
+    }
+}

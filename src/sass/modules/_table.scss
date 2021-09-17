@@ -1,0 +1,60 @@
+.table1{
+    margin: 5%;
+    border: 1px solid lightgray;
+    bottom: 10px;
+    
+    .content{
+        // border: 1px solid blue;
+        position: relative;
+        .imgRGrey{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .imgLGrey{
+            position: absolute;
+            top: 0;
+        }
+        .title{
+            font-family: courgette;
+            span{
+                color: $rouge;
+                font-size: 50px;
+            }
+        }
+        .tableForm{
+            // border: 1px solid red;
+            background-image: url(../img/book_table_bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            padding: 60px 10%;
+            border-radius: 20px;
+            margin: 20%;
+            margin-top: 50px;
+            .callUs{
+                
+            }
+            .row{
+                form{
+                    div{
+                        input, select{ 
+                            border-radius: 10px !important;
+                            border: none;
+                            margin-bottom: 20px;
+                            height: 40px;
+                            width: 220px;
+                            color: black;
+                            padding:5px 10px;
+                            &::placeholder{
+                                color: black;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+    
+}

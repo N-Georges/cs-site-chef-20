@@ -199,6 +199,74 @@ section .story .img2 {
   margin: 18px 25px;
   font-weight: bold;
 }
+.chef {
+  background-color: black;
+  padding: 5%;
+}
+.chef .container .row .title {
+  font-family: courgette;
+  margin-bottom: 50px;
+  color: white;
+}
+.chef .container .row .title span {
+  color: #C42D40;
+}
+.chef .container .row div img {
+  height: 300px;
+  width: 200px;
+  border-bottom: 1px solid grey;
+}
+.chef .container .row div p {
+  color: white;
+}
+
+.table1 {
+  margin: 5%;
+  border: 1px solid lightgray;
+  bottom: 10px;
+}
+.table1 .content {
+  position: relative;
+}
+.table1 .content .imgRGrey {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.table1 .content .imgLGrey {
+  position: absolute;
+  top: 0;
+}
+.table1 .content .title {
+  font-family: courgette;
+}
+.table1 .content .title span {
+  color: #C42D40;
+  font-size: 50px;
+}
+.table1 .content .tableForm {
+  background-image: url(../img/book_table_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 60px 10%;
+  border-radius: 20px;
+  margin: 20%;
+  margin-top: 50px;
+}
+.table1 .content .tableForm .row form div input, .table1 .content .tableForm .row form div select {
+  border-radius: 10px !important;
+  border: none;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 220px;
+  color: black;
+  padding: 5px 10px;
+}
+.table1 .content .tableForm .row form div input::placeholder, .table1 .content .tableForm .row form div select::placeholder {
+  color: black;
+}
+
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
