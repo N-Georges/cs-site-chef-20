@@ -156,6 +156,7 @@ section .story .img2 {
   text-align: center;
 }
 .contain .row .col-2 div {
+  cursor: pointer;
   border-bottom: 1px solid lightgray;
   border-right: 1px solid lightgray;
   font-family: courgette;
@@ -200,18 +201,29 @@ section .story .img2 {
   margin: 18px 25px;
   font-weight: bold;
 }
+.contain .col-md-5 .price span {
+  padding: 0px 10px;
+  background-color: lightgray;
+}
+
 .chef {
   background-color: black;
   padding: 5%;
 }
-.chef .container .row .title {
+.chef .row .title {
   font-family: courgette;
   margin-bottom: 50px;
   color: white;
 }
-.chef .container .row .title span {
+.chef .row .title span {
   color: #C42D40;
   font-size: 40px;
+}
+.chef .container .row div {
+  cursor: pointer;
+}
+.chef .container .row div:hover {
+  transform: scale(1.5);
 }
 .chef .container .row div img {
   height: 300px;
@@ -403,6 +415,21 @@ section .story .img2 {
 }
 .contact .contactContent .content div:not(div:last-of-type) {
   border-bottom: 1px solid lightgray;
+}
+
+footer {
+  background-image: url(../img/footer_background.jpg);
+  background-size: cover;
+}
+footer .tags .row .btn {
+  border-radius: 90px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 14px;
+}
+footer .bgRed {
+  background-color: #C42D40;
+  height: 50px;
 }
 
 main {

@@ -1,8 +1,7 @@
 .chef{
     background-color: black;
     padding: 5%;
-    .container{
-        .row{
+    .row{
             .title{
                 font-family: courgette;
                 margin-bottom: 50px;
@@ -13,13 +12,18 @@
                 }
             }
         }
+    .container{
+        
         .row{
             div{
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.5); //zoom de 150%
+                  }
                 img{
                     height: 300px;
                     width: 200px;
                     border-bottom: 1px solid grey;
-                    
                 }
                 p{
                     color: white;
