@@ -4,16 +4,14 @@
   src: url(../fonts/Courgette-Regular.ttf);
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.5)), url(../img/banner1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  position: relative;
   height: 100vh;
   width: 100%;
 }
 header .navbar {
-  margin-left: 250px;
+  z-index: 1;
+  position: absolute;
+  left: 17%;
   background: none;
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -59,7 +57,10 @@ header .navbar .container-fluid .collapse .navbar-brand, header .navbar .contain
   margin: 0 50px;
 }
 header .titleHeader {
-  margin: 0 20%;
+  position: absolute;
+  top: 20%;
+  left: 26%;
+  z-index: 2;
   text-align: center;
 }
 header .titleHeader p {
@@ -86,41 +87,24 @@ header .titleHeader .btn:first-of-type {
 header .titleHeader .btn:first-of-type:hover {
   background: #bfbfbf;
 }
-header .indicator span {
-  display: inline-block;
-  background: #bfbfbf;
-  height: 15px;
-  width: 15px;
-  border: 3px solid white;
-  border-radius: 50%;
-  margin-right: 10px;
-  cursor: pointer;
-}
-header .indicator {
-  margin-top: 120px;
-  margin-left: 620px;
-}
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  header .indicator {
-    margin-top: 30%;
-    margin-left: 47%;
-  }
-}
-header .indicator span.active {
-  background: #3a3a3a;
-}
-header .cta {
+header .carousel {
   position: absolute;
-  width: 25%;
-  min-width: 250px;
-  right: 8%;
-  bottom: 100px;
+  height: 100%;
+}
+header .carousel img {
+  filter: brightness(30%);
+}
+header .carousel .carousel-indicators button {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 5px solid lightgray;
+  background-color: white;
 }
 
 section:first-of-type {
   background-color: white;
   position: relative;
-  margin: 5% 10%;
 }
 section .story h3, section .story .h3 {
   font-family: courgette;
