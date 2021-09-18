@@ -2,6 +2,8 @@ section{
     &:first-of-type{
         background-color: white;
         position: relative;
+        margin: 5% 10%;
+        margin-top: 175px;
     }
     
     .story{
@@ -28,9 +30,9 @@ section{
 }
 .contain{
     position: relative;
-    // margin: 10%;
+    // height: 100%;
     .row{
-        .col-12{
+        .title{
             text-align: center;
             font-family: courgette;
             span{
@@ -39,12 +41,16 @@ section{
         }
     }
     .row{
-        .col-2{
-            text-align: center;            
+        .menu{
+            text-align: center;   
+                    
             div{ 
                 cursor: pointer;
-                border-bottom: 1px solid lightgray;
-                border-right: 1px solid lightgray;
+                border-bottom: 1px solid $gris;
+                border-right: 1px solid $gris;
+                @media screen and (min-width:600px) and (max-width:1024px) {
+                border-left: 1px solid $gris;
+            } 
                 &:hover{
                     border-right: 5px solid $rouge;
                     i{
@@ -67,7 +73,7 @@ section{
         position: absolute;
         right: 0px;
     }
-    .col-md-5{
+    .sousMenu{
         margin-bottom: 20px;
         .brd{
             border-bottom: 1px solid lightgray ;

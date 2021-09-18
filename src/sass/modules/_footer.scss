@@ -1,6 +1,14 @@
 footer{
     background-image: url(../img/footer_background.jpg);
     background-size: cover;
+    .social{
+        i{
+            cursor:pointer;
+            &:hover{
+                color: $rouge;
+            }
+        }
+    }
     .tags{
         .row{
             .btn{

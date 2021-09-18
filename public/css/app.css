@@ -8,6 +8,11 @@ header {
   height: 100vh;
   width: 100%;
 }
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  header {
+    width: 100vw;
+  }
+}
 header .navbar {
   z-index: 1;
   position: absolute;
@@ -15,32 +20,14 @@ header .navbar {
   background: none;
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  header .navbar {
-    margin-left: 60px;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  header .navbar .container-fluid .navbar-toggler, header .navbar .container-xxl .navbar-toggler, header .navbar .container-xl .navbar-toggler, header .navbar .container-lg .navbar-toggler, header .navbar .container-md .navbar-toggler, header .navbar .container-sm .navbar-toggler {
-    display: none;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 1024px) {
   header .navbar .container-fluid .collapse, header .navbar .container-xxl .collapse, header .navbar .container-xl .collapse, header .navbar .container-lg .collapse, header .navbar .container-md .collapse, header .navbar .container-sm .collapse {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 header .navbar .container-fluid .collapse ul li, header .navbar .container-xxl .collapse ul li, header .navbar .container-xl .collapse ul li, header .navbar .container-lg .collapse ul li, header .navbar .container-md .collapse ul li, header .navbar .container-sm .collapse ul li {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 0 5px;
-}
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  header .navbar .container-fluid .collapse ul li, header .navbar .container-xxl .collapse ul li, header .navbar .container-xl .collapse ul li, header .navbar .container-lg .collapse ul li, header .navbar .container-md .collapse ul li, header .navbar .container-sm .collapse ul li {
-    border-top: 0px solid white;
-    border-bottom: 0px solid white;
-  }
 }
 header .navbar .container-fluid .collapse ul li:hover, header .navbar .container-xxl .collapse ul li:hover, header .navbar .container-xl .collapse ul li:hover, header .navbar .container-lg .collapse ul li:hover, header .navbar .container-md .collapse ul li:hover, header .navbar .container-sm .collapse ul li:hover {
   background-color: #C42D40;
@@ -63,12 +50,24 @@ header .titleHeader {
   z-index: 2;
   text-align: center;
 }
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  header .titleHeader {
+    top: 10%;
+    left: 15%;
+    font-size: 10px;
+  }
+}
 header .titleHeader p {
   font-family: courgette;
   font-weight: bold;
   color: white;
   font-size: 55px;
   margin-top: 50px;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  header .titleHeader p {
+    font-size: 30px;
+  }
 }
 header .titleHeader p span:first-of-type {
   color: #C42D40;
@@ -105,6 +104,8 @@ header .carousel .carousel-indicators button {
 section:first-of-type {
   background-color: white;
   position: relative;
+  margin: 5% 10%;
+  margin-top: 175px;
 }
 section .story h3, section .story .h3 {
   font-family: courgette;
@@ -129,69 +130,75 @@ section .story .img2 {
 .contain {
   position: relative;
 }
-.contain .row .col-12 {
+.contain .row .title {
   text-align: center;
   font-family: courgette;
 }
-.contain .row .col-12 span {
+.contain .row .title span {
   color: #C42D40;
 }
-.contain .row .col-2 {
+.contain .row .menu {
   text-align: center;
 }
-.contain .row .col-2 div {
+.contain .row .menu div {
   cursor: pointer;
   border-bottom: 1px solid lightgray;
   border-right: 1px solid lightgray;
   font-family: courgette;
 }
-.contain .row .col-2 div:hover {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .contain .row .menu div {
+    border-left: 1px solid lightgray;
+  }
+}
+.contain .row .menu div:hover {
   border-right: 5px solid #C42D40;
 }
-.contain .row .col-2 div:hover i {
+.contain .row .menu div:hover i {
   color: #C42D40;
 }
-.contain .row .col-2 div i {
+.contain .row .menu div i {
   font-size: 50px;
   padding-top: 10px;
 }
-.contain .row .col-2 div p {
+.contain .row .menu div p {
   font-size: 25px;
 }
 .contain .img3 {
   position: absolute;
   right: 0px;
 }
-.contain .col-md-5 {
+.contain .sousMenu {
   margin-bottom: 20px;
 }
-.contain .col-md-5 .brd {
+.contain .sousMenu .brd {
   border-bottom: 1px solid lightgray;
 }
-.contain .col-md-5 .menuImg {
+.contain .sousMenu .menuImg {
   height: 75px;
   width: 75px;
   border: 5px solid lightgray;
   border-radius: 50%;
 }
-.contain .col-md-5 .content {
+.contain .sousMenu .content {
   margin-left: 10px;
 }
-.contain .col-md-5 .content h6, .contain .col-md-5 .content .h6 {
+.contain .sousMenu .content h6, .contain .sousMenu .content .h6 {
   margin: 0;
 }
-.contain .col-md-5 .price {
+.contain .sousMenu .price {
   color: #C42D40;
   margin: 18px 25px;
   font-weight: bold;
 }
-.contain .col-md-5 .price span {
+.contain .sousMenu .price span {
   padding: 0px 10px;
   background-color: lightgray;
 }
 
 .chef {
-  background-color: black;
+  background-image: url(../img/team_background.jpg);
+  background-size: 10000px;
   padding: 5%;
 }
 .chef .row .title {
@@ -223,6 +230,11 @@ section .story .img2 {
   border: 1px solid lightgray;
   bottom: 10px;
   background-color: white;
+}
+@media screen and (max-width: 600px) {
+  .table1 {
+    width: 100%;
+  }
 }
 .table1 .content {
   position: relative;
@@ -262,6 +274,11 @@ section .story .img2 {
   margin: 20%;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+  .table1 .content .tableForm {
+    width: 100%;
+  }
 }
 .table1 .content .tableForm .callUs {
   color: lightgray;
@@ -327,6 +344,7 @@ section .story .img2 {
   background-image: url(../img/testimonials_background.jpg);
   background-position: center;
   background-size: 10000px;
+  width: 100%;
 }
 .client .row {
   width: 100%;
@@ -405,6 +423,12 @@ footer {
   background-image: url(../img/footer_background.jpg);
   background-size: cover;
 }
+footer .social i {
+  cursor: pointer;
+}
+footer .social i:hover {
+  color: #C42D40;
+}
 footer .tags .row .btn {
   border-radius: 90px;
   border: 1px solid white;
@@ -418,6 +442,7 @@ footer .bgRed {
 
 main {
   background-image: url(../img/main_bg.jpg);
+  width: 100vw;
 }
 
 /*!
