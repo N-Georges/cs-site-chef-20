@@ -1,0 +1,31 @@
+.contact{
+    .row{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        .title{
+            font-family: courgette;
+            padding-right: 0px;
+            margin-top: 50px;
+            span{
+                color: $rouge;
+                font-size: 40px;
+            }
+            
+        }
+    }
+    .contactContent{
+        width: 100%;
+        text-align: center;
+        .content{
+            background-color: $rouge;
+            width: 400px;
+            border-radius: 10px;
+            margin: 20px;
+            div:not(div:last-of-type){
+                border-bottom: 1px solid $gris;
+            }
+        }
+    }
+}

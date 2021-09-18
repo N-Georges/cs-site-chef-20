@@ -1,8 +1,11 @@
 .client{
     background-image: url(../img/testimonials_background.jpg);
     background-position: center;
-    background-size: 10000px;    
-    .title{
+    background-size: 10000px;
+    .row{
+        width: 100%;
+        .title{
+        
         font-family: courgette;
         color: white;
         margin-top: 50px;
@@ -11,8 +14,11 @@
             font-size: 40px;
         }
     }
+    }    
+    
     .cardClient{
-        padding: 50px 10%;
+        width: 100%;
+        padding: 50px 5%;
          .client1, .client2{
         img{
             height: 150px;

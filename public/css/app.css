@@ -332,17 +332,21 @@ section .story .img2 {
   background-position: center;
   background-size: 10000px;
 }
-.client .title {
+.client .row {
+  width: 100%;
+}
+.client .row .title {
   font-family: courgette;
   color: white;
   margin-top: 50px;
 }
-.client .title span {
+.client .row .title span {
   color: #C42D40;
   font-size: 40px;
 }
 .client .cardClient {
-  padding: 50px 10%;
+  width: 100%;
+  padding: 50px 5%;
 }
 .client .cardClient .client1 img, .client .cardClient .client2 img {
   height: 150px;
@@ -370,6 +374,35 @@ section .story .img2 {
 }
 .client .cardClient .content2 {
   margin-right: 20px;
+}
+
+.contact .row {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+}
+.contact .row .title {
+  font-family: courgette;
+  padding-right: 0px;
+  margin-top: 50px;
+}
+.contact .row .title span {
+  color: #C42D40;
+  font-size: 40px;
+}
+.contact .contactContent {
+  width: 100%;
+  text-align: center;
+}
+.contact .contactContent .content {
+  background-color: #C42D40;
+  width: 400px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.contact .contactContent .content div:not(div:last-of-type) {
+  border-bottom: 1px solid lightgray;
 }
 
 main {
