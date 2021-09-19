@@ -138,6 +138,7 @@ section .story .img2 {
 }
 .contain .row .title span {
   color: #C42D40;
+  font-size: 40px;
 }
 .contain .row .menu {
   text-align: center;
