@@ -18,7 +18,6 @@ header{
                 // @media screen and (min-width:600px) and (max-width: 1024px) {
                 //    display: none;
                 // }
-                
             }
             .collapse{
                 @media screen and (min-width:600px) and (max-width: 1024px) {
@@ -108,6 +107,14 @@ header{
                 border-radius: 50%;
                 border: 5px solid $gris;
                 background-color: white;
+            }
+        }
+        .carousel-inner{
+            width: 100% !important;
+            height: 100vh !important;
+            img{
+                // height: 800px !important;
+                
             }
         }
         

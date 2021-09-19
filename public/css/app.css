@@ -100,12 +100,14 @@ header .carousel .carousel-indicators button {
   border: 5px solid lightgray;
   background-color: white;
 }
-
+header .carousel .carousel-inner {
+  width: 100% !important;
+  height: 100vh !important;
+}
 section:first-of-type {
   background-color: white;
   position: relative;
   margin: 5% 10%;
-  margin-top: 175px;
 }
 section .story h3, section .story .h3 {
   font-family: courgette;
@@ -418,6 +420,10 @@ section .story .img2 {
 .contact .contactContent .content div:not(div:last-of-type) {
   border-bottom: 1px solid lightgray;
 }
+.contact .contactContent .content .text a {
+  color: white;
+  text-decoration-line: none;
+}
 
 footer {
   background-image: url(../img/footer_background.jpg);
@@ -442,7 +448,7 @@ footer .bgRed {
 
 main {
   background-image: url(../img/main_bg.jpg);
-  width: 100vw;
+  width: 100%;
 }
 
 /*!

@@ -26,6 +26,13 @@
             div:not(div:last-of-type){
                 border-bottom: 1px solid $gris;
             }
+            .text{
+                a{
+                  color: white;
+                  text-decoration-line: none;
+            }
+            }
+            
         }
     }
 }
