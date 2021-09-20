@@ -237,6 +237,7 @@ section .story .img2 {
 .contain .row .menu div i {
   font-size: 50px;
   padding-top: 10px;
+  color: lightgray;
 }
 .contain .row .menu div p {
   font-size: 25px;
@@ -564,6 +565,13 @@ footer .tags .row .btn {
 footer .bgRed {
   background-color: #C42D40;
   height: 50px;
+}
+footer .bgBottom {
+  background-image: url(../img/footer_bottom_decoration_img.png);
+  background-repeat: repeat-x;
+  width: 100% !important;
+  height: 20px;
+  position: absolute;
 }
 
 main {
