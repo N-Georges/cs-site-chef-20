@@ -20,8 +20,15 @@ header .navbar {
   background: none;
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+  header .navbar .container-fluid .navbar-toggler, header .navbar .container-xxl .navbar-toggler, header .navbar .container-xl .navbar-toggler, header .navbar .container-lg .navbar-toggler, header .navbar .container-md .navbar-toggler, header .navbar .container-sm .navbar-toggler {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   header .navbar .container-fluid .collapse, header .navbar .container-xxl .collapse, header .navbar .container-xl .collapse, header .navbar .container-lg .collapse, header .navbar .container-md .collapse, header .navbar .container-sm .collapse {
     display: flex;
+    margin-left: 100px;
+    margin-top: 30px;
   }
 }
 header .navbar .container-fluid .collapse ul li, header .navbar .container-xxl .collapse ul li, header .navbar .container-xl .collapse ul li, header .navbar .container-lg .collapse ul li, header .navbar .container-md .collapse ul li, header .navbar .container-sm .collapse ul li {
@@ -52,9 +59,15 @@ header .titleHeader {
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   header .titleHeader {
-    top: 10%;
+    top: 30%;
     left: 15%;
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .titleHeader {
+    top: 50%;
+    left: 5%;
   }
 }
 header .titleHeader p {
@@ -64,7 +77,7 @@ header .titleHeader p {
   font-size: 55px;
   margin-top: 50px;
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   header .titleHeader p {
     font-size: 30px;
   }
@@ -104,20 +117,42 @@ header .carousel .carousel-inner {
   width: 100% !important;
   height: 100vh !important;
 }
+@media screen and (max-width: 1024px) {
+  header .carousel .carousel-inner .d-block {
+    height: 100vh !important;
+  }
+}
+
 section:first-of-type {
   background-color: white;
   position: relative;
   margin: 5% 10%;
 }
-section .story h3, section .story .h3 {
+@media screen and (max-width: 600px) {
+  section:first-of-type {
+    margin: 0%;
+  }
+}
+@media screen and (max-width: 600px) {
+  section .story .title {
+    padding-right: 0px !important;
+    width: 370px;
+  }
+}
+section .story .title h3, section .story .title .h3 {
   font-family: courgette;
 }
-section .story h3 span, section .story .h3 span {
+section .story .title h3 span, section .story .title .h3 span {
   color: #C42D40;
   font-size: 40px;
 }
-section .story p {
+section .story .title p {
   padding: 20px 20%;
+}
+@media screen and (max-width: 600px) {
+  section .story .title p {
+    padding: 20px 0%;
+  }
 }
 section .story .img1 {
   position: absolute;
@@ -132,16 +167,37 @@ section .story .img2 {
 .contain {
   position: relative;
 }
+@media screen and (max-width: 600px) {
+  .contain .row {
+    width: 360px;
+  }
+}
 .contain .row .title {
   text-align: center;
   font-family: courgette;
+}
+@media screen and (max-width: 600px) {
+  .contain .row .title {
+    padding: 0px !important;
+  }
 }
 .contain .row .title span {
   color: #C42D40;
   font-size: 40px;
 }
+@media screen and (max-width: 600px) {
+  .contain .row {
+    padding: 0px !important;
+  }
+}
 .contain .row .menu {
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .contain .row .menu {
+    padding: 0px !important;
+    width: 380px !important;
+  }
 }
 .contain .row .menu div {
   cursor: pointer;
@@ -173,6 +229,12 @@ section .story .img2 {
 }
 .contain .sousMenu {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .contain .sousMenu {
+    padding: 0px !important;
+    width: 370px;
+  }
 }
 .contain .sousMenu .brd {
   border-bottom: 1px solid lightgray;
@@ -237,6 +299,7 @@ section .story .img2 {
 @media screen and (max-width: 600px) {
   .table1 {
     width: 100%;
+    margin: 0;
   }
 }
 .table1 .content {
@@ -278,11 +341,6 @@ section .story .img2 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 600px) {
-  .table1 .content .tableForm {
-    width: 100%;
-  }
-}
 .table1 .content .tableForm .callUs {
   color: lightgray;
 }
@@ -306,9 +364,25 @@ section .story .img2 {
 .table1 .content .tableForm .row form div input::placeholder, .table1 .content .tableForm .row form div select::placeholder {
   color: black;
 }
+@media screen and (max-width: 600px) {
+  .table1 .content .tableForm .row form div input, .table1 .content .tableForm .row form div select {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .table1 .content .title {
+    padding: 0;
+    width: 375px;
+  }
+}
 .table1 .content .cloche {
   height: 3px;
   padding-bottom: 100px;
+}
+@media screen and (max-width: 600px) {
+  .table1 .content .cloche {
+    width: 370px;
+  }
 }
 .table1 .content .blog {
   margin-bottom: 100px;
@@ -320,6 +394,11 @@ section .story .img2 {
   border: 5px solid lightgray;
   border-radius: 20px;
   width: 400px;
+}
+@media screen and (max-width: 600px) {
+  .table1 .content .blog .cardBlog .imgBlog {
+    width: 300px;
+  }
 }
 .table1 .content .blog .cardBlog .social {
   position: absolute;
@@ -336,8 +415,20 @@ section .story .img2 {
   color: white;
   font-size: 20px;
 }
+@media screen and (max-width: 600px) {
+  .table1 .content .blog .cardBlog .social {
+    bottom: 135px;
+    width: 300px;
+    left: 50px;
+  }
+}
 .table1 .content .blog .cardBlog .textContent {
   margin: 25px 30px;
+}
+@media screen and (max-width: 600px) {
+  .table1 .content .blog .cardBlog .textContent {
+    margin: 25px 5px;
+  }
 }
 .table1 .content .blog .btn {
   border-radius: 20px;
@@ -408,6 +499,11 @@ section .story .img2 {
   color: #C42D40;
   font-size: 40px;
 }
+@media screen and (max-width: 600px) {
+  .contact .row .cloche img {
+    width: 100%;
+  }
+}
 .contact .contactContent {
   width: 100%;
   text-align: center;
@@ -420,6 +516,11 @@ section .story .img2 {
 }
 .contact .contactContent .content div:not(div:last-of-type) {
   border-bottom: 1px solid lightgray;
+}
+@media screen and (max-width: 600px) {
+  .contact .contactContent .content {
+    width: 300px;
+  }
 }
 .contact .contactContent .content .text a {
   color: white;
@@ -450,6 +551,11 @@ footer .bgRed {
 main {
   background-image: url(../img/main_bg.jpg);
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+  main .cloche img {
+    width: 100%;
+  }
 }
 
 /*!

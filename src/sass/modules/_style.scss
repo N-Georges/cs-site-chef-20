@@ -10,4 +10,11 @@
 main{
     background-image: url(../img/main_bg.jpg);
     width: 100%;
+    .cloche{
+        img{
+            @media screen and (max-width:600px) {
+            width: 100%;
+            }
+        }      
+    }
 }

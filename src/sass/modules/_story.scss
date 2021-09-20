@@ -3,24 +3,37 @@ section{
         background-color: white;
         position: relative;
         margin: 5% 10%;
-        // margin-top: 175px;
+        @media screen and (max-width:600px) {
+            margin: 0%; 
+            }
     }
     
     .story{
-        h3{
-            font-family: courgette;
-            span{
-                color: $rouge;
-                font-size: 40px;
+        .title {
+            @media screen and (max-width:600px) {
+                padding-right: 0px !important;
+                width: 370px;
+            }
+            h3 {
+                font-family: courgette;
+                span {
+                    color: $rouge;
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                padding: 20px 20%;
+                @media screen and (max-width:600px) {
+                    padding: 20px 0%;
+                }
             }
         }
-        p{
-            padding: 20px 20%;
-            }
+        
         .img1{
             position: absolute;
             top: 0;
-            }
+        }
         .img2{
             position: absolute;
             top: 0;
@@ -32,9 +45,16 @@ section{
     position: relative;
     // height: 100%;
     .row{
+        @media screen and (max-width:600px) {
+            // padding: 0px !important;
+            width: 360px;
+        } 
         .title{
             text-align: center;
             font-family: courgette;
+            @media screen and (max-width:600px) {
+                padding: 0px !important;
+            }
             span{
                 color: $rouge;
                 font-size: 40px;
@@ -43,8 +63,15 @@ section{
         }
     }
     .row{
+        @media screen and (max-width:600px) {
+            padding: 0px !important;
+        }
         .menu{
-            text-align: center;   
+            text-align: center;  
+            @media screen and (max-width:600px) {
+                padding: 0px !important;
+                width: 380px !important;
+            } 
                     
             div{ 
                 cursor: pointer;
@@ -77,6 +104,10 @@ section{
     }
     .sousMenu{
         margin-bottom: 20px;
+        @media screen and (max-width:600px) {
+            padding: 0px !important;
+            width: 370px;
+        } 
         .brd{
             border-bottom: 1px solid lightgray ;
         }

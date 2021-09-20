@@ -14,6 +14,14 @@
             }
             
         }
+        .cloche{
+            img{
+                @media screen and (max-width:600px) {
+                width: 100%;
+            }
+            }
+            
+        }
     }
     .contactContent{
         width: 100%;
@@ -25,6 +33,9 @@
             margin: 20px;
             div:not(div:last-of-type){
                 border-bottom: 1px solid $gris;
+            }
+            @media screen and (max-width:600px) {
+                width: 300px;
             }
             .text{
                 a{

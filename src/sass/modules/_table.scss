@@ -5,6 +5,7 @@
     background-color: white;
     @media screen and (max-width:600px) {
         width: 100%;
+        margin: 0;
     }
     
     .content{
@@ -45,7 +46,9 @@
             margin-top: 50px;
             margin-bottom: 50px;
             @media screen and (max-width:600px) {
-            width: 100%;
+                input{
+                    // width: 0;
+                }
             }
             .callUs{
                 color: lightgray;
@@ -73,15 +76,28 @@
                             &::placeholder{
                                 color: black;
                             }
+                            @media screen and (max-width:600px) {
+                                width: 200px;
+                            }
                         }
                     }
                    
                 }
             }
         }
+        .title{
+            @media screen and (max-width:600px) {
+                padding: 0;
+                width: 375px;
+            }
+        }
         .cloche{
             height: 3px;
             padding-bottom: 100px;
+            @media screen and (max-width:600px) {
+                width: 370px;
+            }
+            
         }
         .blog{
             margin-bottom: 100px;
@@ -89,8 +105,11 @@
                 position: relative;
                 .imgBlog{
                     border: 5px solid $gris;
-                border-radius: 20px;
-                width: 400px;
+                    border-radius: 20px;
+                    width: 400px;
+                    @media screen and (max-width:600px) {
+                        width: 300px;
+                    }
                 }
                 .social{
                     position: absolute;
@@ -106,9 +125,17 @@
                         color: white;
                         font-size: 20px;
                     }
+                    @media screen and (max-width:600px) {
+                        bottom: 135px;
+                        width: 300px;
+                        left: 50px;    
+                    }
                 }
                 .textContent{
                     margin: 25px 30px;
+                    @media screen and (max-width:600px) {
+                        margin: 25px 5px;
+                    }
                 }
             }
             .btn{
