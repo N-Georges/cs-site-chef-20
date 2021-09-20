@@ -122,6 +122,24 @@ header .carousel .carousel-inner {
     height: 100vh !important;
   }
 }
+header .carousel .carousel-inner .bgbottom {
+  background-image: url(../img/bottom_decoration_img.png);
+  background-repeat: repeat-x;
+  width: 100% !important;
+  height: 20px;
+  position: absolute;
+  top: 657px;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  header .carousel .carousel-inner .bgbottom {
+    top: 1010px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .carousel .carousel-inner .bgbottom {
+    top: 800px;
+  }
+}
 
 section:first-of-type {
   background-color: white;
