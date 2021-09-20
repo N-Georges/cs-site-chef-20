@@ -111,7 +111,8 @@ header .carousel .carousel-indicators button {
   width: 10px;
   border-radius: 50%;
   border: 5px solid lightgray;
-  background-color: white;
+  background-color: grey;
+  margin: 10px;
 }
 header .carousel .carousel-inner {
   width: 100% !important;
