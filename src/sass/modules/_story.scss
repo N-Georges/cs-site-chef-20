@@ -44,6 +44,7 @@ section{
 .contain{
     position: relative;
     // height: 100%;
+    padding: 0 !important;
     .row{
         @media screen and (max-width:600px) {
             // padding: 0px !important;
@@ -63,14 +64,16 @@ section{
         }
     }
     .row{
+        width: 100%;
         @media screen and (max-width:600px) {
             padding: 0px !important;
+            width: 100vw;
         }
         .menu{
             text-align: center;  
             @media screen and (max-width:600px) {
                 padding: 0px !important;
-                width: 380px !important;
+                width: 100% !important;
             } 
                     
             div{ 
@@ -117,13 +120,15 @@ section{
             width: 75px;
             border: 5px solid $gris;
             border-radius: 50%;
+            @media screen and (max-width:600px) {
+                margin-left: 10px;
+            }
         }
         .content{
             margin-left: 10px;
             h6{
                 margin: 0;
             }
-        
         }
         .price{
             color: $rouge;

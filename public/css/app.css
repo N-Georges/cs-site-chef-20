@@ -16,8 +16,15 @@ header {
 header .navbar {
   z-index: 1;
   position: absolute;
-  left: 17%;
+  left: 50%;
+  transform: translateX(-50%);
   background: none;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  header .navbar {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   header .navbar .container-fluid .navbar-toggler, header .navbar .container-xxl .navbar-toggler, header .navbar .container-xl .navbar-toggler, header .navbar .container-lg .navbar-toggler, header .navbar .container-md .navbar-toggler, header .navbar .container-sm .navbar-toggler {
@@ -27,8 +34,8 @@ header .navbar {
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   header .navbar .container-fluid .collapse, header .navbar .container-xxl .collapse, header .navbar .container-xl .collapse, header .navbar .container-lg .collapse, header .navbar .container-md .collapse, header .navbar .container-sm .collapse {
     display: flex;
-    margin-left: 100px;
-    margin-top: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
   }
 }
 header .navbar .container-fluid .collapse ul li, header .navbar .container-xxl .collapse ul li, header .navbar .container-xl .collapse ul li, header .navbar .container-lg .collapse ul li, header .navbar .container-md .collapse ul li, header .navbar .container-sm .collapse ul li {
@@ -53,21 +60,15 @@ header .navbar .container-fluid .collapse .navbar-brand, header .navbar .contain
 header .titleHeader {
   position: absolute;
   top: 20%;
-  left: 26%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
   text-align: center;
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  header .titleHeader {
-    top: 30%;
-    left: 15%;
-    font-size: 10px;
-  }
-}
 @media screen and (max-width: 600px) {
   header .titleHeader {
-    top: 50%;
-    left: 5%;
+    top: 30%;
+    width: 100%;
   }
 }
 header .titleHeader p {
@@ -185,6 +186,7 @@ section .story .img2 {
 
 .contain {
   position: relative;
+  padding: 0 !important;
 }
 @media screen and (max-width: 600px) {
   .contain .row {
@@ -204,9 +206,13 @@ section .story .img2 {
   color: #C42D40;
   font-size: 40px;
 }
+.contain .row {
+  width: 100%;
+}
 @media screen and (max-width: 600px) {
   .contain .row {
     padding: 0px !important;
+    width: 100vw;
   }
 }
 .contain .row .menu {
@@ -215,7 +221,7 @@ section .story .img2 {
 @media screen and (max-width: 600px) {
   .contain .row .menu {
     padding: 0px !important;
-    width: 380px !important;
+    width: 100% !important;
   }
 }
 .contain .row .menu div {
@@ -264,6 +270,11 @@ section .story .img2 {
   width: 75px;
   border: 5px solid lightgray;
   border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .contain .sousMenu .menuImg {
+    margin-left: 10px;
+  }
 }
 .contain .sousMenu .content {
   margin-left: 10px;
@@ -361,6 +372,12 @@ section .story .img2 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 600px) {
+  .table1 .content .tableForm {
+    margin: 0%;
+    margin-bottom: 20px;
+  }
+}
 .table1 .content .tableForm .callUs {
   color: lightgray;
 }
@@ -372,7 +389,14 @@ section .story .img2 {
   border-radius: 20px;
   margin-top: 50px;
 }
-.table1 .content .tableForm .row form div input, .table1 .content .tableForm .row form div select {
+@media screen and (max-width: 600px) {
+  .table1 .content .tableForm .content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.table1 .content .tableForm .content form div input, .table1 .content .tableForm .content form div select {
   border-radius: 10px !important;
   border: none;
   margin-bottom: 20px;
@@ -381,12 +405,12 @@ section .story .img2 {
   color: black;
   padding: 5px 10px;
 }
-.table1 .content .tableForm .row form div input::placeholder, .table1 .content .tableForm .row form div select::placeholder {
+.table1 .content .tableForm .content form div input::placeholder, .table1 .content .tableForm .content form div select::placeholder {
   color: black;
 }
 @media screen and (max-width: 600px) {
-  .table1 .content .tableForm .row form div input, .table1 .content .tableForm .row form div select {
-    width: 200px;
+  .table1 .content .tableForm .content form div input, .table1 .content .tableForm .content form div select {
+    width: 340px;
   }
 }
 @media screen and (max-width: 600px) {

@@ -8,8 +8,14 @@ header{
     .navbar{
         z-index: 1;
         position: absolute;
-        left: 17%;
+        // left: 17%;
+        left: 50%;
+        transform: translateX(-50%);
         background: none;
+        @media screen and (min-width:600px) and (max-width: 1024px) {
+            left: 50%;
+            transform: translateX(-50%);
+         }
         // @media screen and (min-width:600px) and (max-width: 1024px) {
         //     margin-left: 60px;
         //  }
@@ -22,8 +28,8 @@ header{
             .collapse{
                 @media screen and (min-width:600px) and (max-width: 1024px) {
                      display: flex;
-                     margin-left: 100px;
-                     margin-top: 30px;
+                     margin-left: 50px;
+                     margin-top: 50px;
                  }
                 ul{
                     li{
@@ -56,17 +62,24 @@ header{
     .titleHeader{
         position: absolute;
         top: 20%;
-        left: 26%;
+        // left: 26%;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 2;
         text-align: center;
-        @media screen and (min-width:600px) and (max-width: 1024px) {
-            top: 30%;
-            left: 15%;
-            font-size: 10px;
-        }
+        // @media screen and (min-width:600px) and (max-width: 1024px) {
+        //     top: 30%;
+        //     left: 15%;
+        //     font-size: 10px;
+        // }
+        // @media screen and (min-width:600px) and (max-width: 1024px) {
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //  }
         @media screen and (max-width: 600px) {
-            top: 50%;
-            left: 5%;
+            top: 30%;
+            width: 100%;
+            // left: 5%;
         }
         
         p{
@@ -123,7 +136,6 @@ header{
                 @media screen and (max-width: 1024px) {
                      height: 100vh !important;        
                 }
-                 
             }
             .bgbottom{
                 background-image: url(../img/bottom_decoration_img.png);
